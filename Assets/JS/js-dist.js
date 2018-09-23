@@ -1,1 +1,1 @@
-$(function(){$("h1").animate({marginTop:"0px",opacity:"1"},1e3,"swing")});
+$(function(){$("#showPW").on("change",function(){$("#showPW:checked").val()?$("#Password").attr("type","text"):$("#Password").attr("type","password")})});

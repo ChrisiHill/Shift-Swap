@@ -331,8 +331,10 @@ ASALocalRun/
 *.jade
 *Temp.js
 *.sass
-*prepros-6.config
 Designs/Logo.jpg
+
 Designs/Logo.png
+
 Designs/Logo.psd
+
 Designs/Shift Swap Storyboard.pdf
