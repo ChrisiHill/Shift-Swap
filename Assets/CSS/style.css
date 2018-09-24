@@ -1,1 +1,77 @@
-body,html{margin:0;padding:0;overflow-x:hidden}a,input,p,textarea{font-family:Roboto}h1,h2,h3,h4,h5,h6{font-family:Montserrat}#loginForm{padding:0 20px}#loginForm .logo{display:block;width:15%;min-width:200px;margin:20px auto;text-align:center}#loginForm .form{padding:20px 10px;border:2px #333 solid;border-radius:15px}#loginForm .form .col-10{padding:3% 0}#loginForm .form h1,#loginForm .form h6{text-align:center}#loginForm .form input{width:100%;border:2px #333 solid;border-radius:15px;padding:7px 10px}#loginForm .form input:focus{outline:0}#loginForm .form .Password input[type=checkbox]{display:inline;width:20px;height:20px;margin-top:10px}#loginForm .form .Password p{display:inline;position:relative;top:-5px}#loginForm .form .Password .showPW{text-align:center}button{display:inherit;margin:auto;font-family:Montserrat;color:#333;padding:5px 30px;border:2px #333 solid;border-radius:10px;background-color:#fc0;transition:all 300ms ease}button:hover{cursor:pointer;background-color:#da0}button:focus{outline:0}button#Signup{background-color:#ddd}button#Signup:hover{cursor:pointer;background-color:#bbb}a{color:black;text-decoration:underline}nav{padding-top:10px;text-align:center}nav img{width:100%;max-width:150px;position:relative;display:block;margin:auto}nav h3{padding-top:7px}nav h5{padding-top:11px}main{padding:0 30px;padding-top:5%}main .col-xl-6 .col-md-6 .con .con{border:2px #333 solid;border-radius:5px}main .col-xl-6 .col-md-6 .con h4{text-align:center}main .col-xl-6 .col-md-6 .con .shifts{overflow-y:auto;position:relative}main .col-xl-6 .col-md-6 .con .shifts .shift{text-align:center;padding:10px;border-radius:5px}main .col-xl-6 .col-md-6 .con .shifts .shift:nth-child(odd){background-color:#eee}main .col-xl-6 .col-md-6 .con .shifts .shift p{margin:0}main .col-xl-6 .col-md-6 .con .shifts .footer{position:relative}main .col-xl-6 .col-md-6 .con .shifts .centreBTN{width:100%;position:absolute;bottom:40px}main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar{width:10px}main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-track{box-shadow:inset 0 0 5px grey;border-radius:50px}main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-thumb{background:#333;border-radius:3px}main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-thumb:hover{background:black}main .col-xl-6 .col-md-6 .con a{margin:15px;text-decoration:underline;position:absolute;bottom:0px}main .col-xl-6 .col-md-6 .con a:hover{cursor:pointer}@media (min-width:768px){.shifts{height:600px}}
+body, html { margin: 0; padding: 0; overflow-x: hidden; }
+
+p, a, input, textarea { font-family: Roboto; }
+
+h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
+
+#loginForm { padding: 0 20px; }
+
+#loginForm .logo { display: block; width: 15%; min-width: 200px; margin: 20px auto; text-align: center; }
+
+#loginForm .form { padding: 20px 10px; border: 2px #333 solid; border-radius: 15px; }
+
+#loginForm .form .col-10 { padding: 3% 0; }
+
+#loginForm .form h1, #loginForm .form h6 { text-align: center; }
+
+#loginForm .form input { width: 100%; border: 2px #333 solid; border-radius: 15px; padding: 7px 10px; }
+
+#loginForm .form input:focus { outline: 0; }
+
+#loginForm .form .Password input[type="checkbox"] { display: inline; width: 20px; height: 20px; margin-top: 10px; }
+
+#loginForm .form .Password p { display: inline; position: relative; top: -5px; }
+
+#loginForm .form .Password .showPW { text-align: center; }
+
+button { display: inherit; margin: auto; font-family: Montserrat; color: #333; padding: 5px 30px; border: 2px #333 solid; border-radius: 10px; background-color: #fc0; transition: all 300ms ease; }
+
+button:hover { cursor: pointer; background-color: #da0; }
+
+button:focus { outline: 0; }
+
+button#Signup { background-color: #ddd; }
+
+button#Signup:hover { cursor: pointer; background-color: #bbb; }
+
+a { color: black; text-decoration: underline; }
+
+nav { padding-top: 10px; text-align: center; }
+
+nav img { width: 100%; max-width: 150px; position: relative; display: block; margin: auto; }
+
+nav h3 { padding-top: 7px; }
+
+nav h5 { padding-top: 11px; }
+
+main { padding: 0 30px; padding-top: 5%; }
+
+main .col-xl-6 .col-md-6 .con .con { border: 2px #333 solid; border-radius: 5px; }
+
+main .col-xl-6 .col-md-6 .con h4 { text-align: center; }
+
+main .col-xl-6 .col-md-6 .con .shifts { overflow-y: auto; position: relative; }
+
+main .col-xl-6 .col-md-6 .con .shifts .shift { text-align: center; padding: 10px; border-radius: 5px; }
+
+main .col-xl-6 .col-md-6 .con .shifts .shift:nth-child(odd) { background-color: #eee; }
+
+main .col-xl-6 .col-md-6 .con .shifts .shift p { margin: 0; }
+
+main .col-xl-6 .col-md-6 .con .shifts .footer { position: relative; }
+
+main .col-xl-6 .col-md-6 .con .shifts .centreBTN { width: 100%; position: absolute; bottom: 40px; }
+
+main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar { width: 10px; }
+
+main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 50px; }
+
+main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-thumb:hover { background: black; }
+
+main .col-xl-6 .col-md-6 .con a { margin: 15px; text-decoration: underline; position: absolute; bottom: 0px; }
+
+main .col-xl-6 .col-md-6 .con a:hover { cursor: pointer; }
+
+@media (min-width: 768px) { .shifts { height: 600px; } }
