@@ -1,0 +1,182 @@
+body, html
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+p, a, input, textarea
+    font-family: Roboto
+h1, h2, h3, h4, h5, h6 
+    font-family: Montserrat
+#loginForm
+    padding: 0 20px
+    .logo
+        display: block
+        width: 15%
+        min-width: 200px
+        margin: 20px auto
+        text-align: center
+    .form
+        padding: 20px 10px
+        .col-10
+            padding: 3% 0
+        border: 2px #333 solid
+        border-radius: 15px
+        h1, h6
+            text-align: center
+        input
+            width: 100%
+            border: 2px #333 solid
+            border-radius: 15px
+            padding: 7px 10px
+            &:focus
+                outline: 0
+        .Password
+            input[type="checkbox"]
+                display: inline
+                width: 20px
+                height: 20px
+                margin-top: 10px
+            p
+                display: inline
+                position: relative
+                top: -5px
+            .showPW
+                text-align: center
+button 
+    display: inherit
+    margin: auto
+    font-family: Montserrat
+    color: #333
+    padding: 5px 30px
+    border: 2px #333 solid
+    border-radius: 10px
+    background-color: #fc0
+    transition: all 300ms ease
+    &:hover 
+        cursor: pointer
+        background-color: #da0
+    &:focus
+        outline: 0
+    &#Signup
+        background-color: #ddd
+        &:hover 
+            cursor: pointer
+            background-color: #bbb
+a 
+    color: black
+    text-decoration: underline
+nav 
+    padding-top: 10px
+    text-align: center
+    img 
+        width: 100%
+        max-width: 150px
+        position: relative
+        display: block
+        margin: auto
+    h3
+        padding-top: 7px
+    h5 
+        padding-top: 11px
+main 
+    padding: 0 30px
+    padding-top: 5%
+    .col-xl-6
+        .col-md-6
+            .con
+                .con
+                    border: 2px #333 solid
+                    border-radius: 5px
+                h4
+                    text-align: center
+                .shifts
+                    overflow-y: auto
+                    position: relative
+                    .shift
+                        margin: 0 1px
+                        text-align: center
+                        padding: 10px
+                        border-radius: 5px
+                        &:nth-child(odd)
+                            background-color: #eee
+                        p 
+                            margin: 0
+                    .shift.Waiting
+                        background-color: #fc0
+                    .shift.Approved
+                        background-color: #0c0
+                    .footer
+                        position: relative
+                    .centreBTN
+                        width: 100%
+                        position: absolute
+                        bottom: 40px
+
+                a 
+                    margin: 15px
+                    text-decoration: underline
+                    position: absolute
+                    bottom: 0px
+
+                    &:hover
+                        cursor: pointer
+    .Filter
+        background-color: #eee
+        border: 2px #333 solid
+        border-radius: 15px
+        padding: 10px
+        max-height: 600px
+        overflow: auto
+        table
+            width: 100%
+            text-align: center
+            input 
+                display: block
+                margin-top: -5px
+    .Cal
+        table
+            width: 100%
+            text-align: center
+            td
+                position: relative
+                width: 14.28%
+                &:before
+                    content: ""
+                    display: block
+                    padding-top: 100%
+                .con
+                    position:  absolute
+                    top: 2px
+                    left: 2px
+                    bottom: 2px
+                    right: 2px
+                    font-size: 16px
+                    padding-top: calc(50% - 16px)
+                    background-color: #eee
+                    &:hover
+                        cursor: pointer
+                .con.past
+                    background-color: #bbb
+                    &:hover
+                        cursor: auto
+                .con.empty
+                    background-color: white
+                    &:hover
+                        cursor: auto
+                .con.item
+                    background-color: #0c0
+                .con.date
+                    background-color: #fc0
+                height: auto
+.scrollbar::-webkit-scrollbar
+    width: 10px
+.scrollbar::-webkit-scrollbar-track
+    box-shadow: inset 0 0 5px grey 
+    border-radius: 50px
+.scrollbar::-webkit-scrollbar-thumb
+    background: #333
+    border-radius: 3px
+    &:hover
+        background: black
+@media (min-width: 768px)
+    .shifts
+        height: 600px

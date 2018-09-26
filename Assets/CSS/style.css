@@ -52,26 +52,58 @@ main .col-xl-6 .col-md-6 .con h4 { text-align: center; }
 
 main .col-xl-6 .col-md-6 .con .shifts { overflow-y: auto; position: relative; }
 
-main .col-xl-6 .col-md-6 .con .shifts .shift { text-align: center; padding: 10px; border-radius: 5px; }
+main .col-xl-6 .col-md-6 .con .shifts .shift { margin: 0 1px; text-align: center; padding: 10px; border-radius: 5px; }
 
 main .col-xl-6 .col-md-6 .con .shifts .shift:nth-child(odd) { background-color: #eee; }
 
 main .col-xl-6 .col-md-6 .con .shifts .shift p { margin: 0; }
 
+main .col-xl-6 .col-md-6 .con .shifts .shift.Waiting { background-color: #fc0; }
+
+main .col-xl-6 .col-md-6 .con .shifts .shift.Approved { background-color: #0c0; }
+
 main .col-xl-6 .col-md-6 .con .shifts .footer { position: relative; }
 
 main .col-xl-6 .col-md-6 .con .shifts .centreBTN { width: 100%; position: absolute; bottom: 40px; }
 
-main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar { width: 10px; }
-
-main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 50px; }
-
-main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-
-main .col-xl-6 .col-md-6 .con .shifts::-webkit-scrollbar-thumb:hover { background: black; }
-
 main .col-xl-6 .col-md-6 .con a { margin: 15px; text-decoration: underline; position: absolute; bottom: 0px; }
 
 main .col-xl-6 .col-md-6 .con a:hover { cursor: pointer; }
+
+main .Filter { background-color: #eee; border: 2px #333 solid; border-radius: 15px; padding: 10px; max-height: 600px; overflow: auto; }
+
+main .Filter table { width: 100%; text-align: center; }
+
+main .Filter table input { display: block; margin-top: -5px; }
+
+main .Cal table { width: 100%; text-align: center; }
+
+main .Cal table td { position: relative; width: 14.28%; height: auto; }
+
+main .Cal table td:before { content: ""; display: block; padding-top: 100%; }
+
+main .Cal table td .con { position: absolute; top: 2px; left: 2px; bottom: 2px; right: 2px; font-size: 16px; padding-top: calc(50% - 16px); background-color: #eee; }
+
+main .Cal table td .con:hover { cursor: pointer; }
+
+main .Cal table td .con.past { background-color: #bbb; }
+
+main .Cal table td .con.past:hover { cursor: auto; }
+
+main .Cal table td .con.empty { background-color: white; }
+
+main .Cal table td .con.empty:hover { cursor: auto; }
+
+main .Cal table td .con.item { background-color: #0c0; }
+
+main .Cal table td .con.date { background-color: #fc0; }
+
+.scrollbar::-webkit-scrollbar { width: 10px; }
+
+.scrollbar::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 50px; }
+
+.scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+.scrollbar::-webkit-scrollbar-thumb:hover { background: black; }
 
 @media (min-width: 768px) { .shifts { height: 600px; } }

@@ -328,9 +328,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
-*.jade
-*Temp.js
-*.sass
 Designs/Logo.jpg
 
 Designs/Logo.png

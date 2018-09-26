@@ -32,11 +32,11 @@
     </nav>
     <main class="row">
       <div class="col-xl-6 row">
-        <div class="col-md-6">
+        <div class="col-md-6 Available">
           <div class="con">
             <h4>Shifts that suit you</h4>
             <div class="con">
-              <div class="shifts">
+              <div class="shifts scrollbar">
                 <div class="shift">
                   <p>Checkouts</p>
                   <p>Fri 10th Sept 2018</p>
@@ -71,17 +71,29 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 YourShifts">
           <div class="con">
             <h4>Your Shifts</h4>
             <div class="con">
-              <div class="shifts">
+              <div class="shifts scrollbar">
                 <div class="shift">
                   <p>Checkouts</p>
                   <p>11th Sept 2018 | 1:00pm - 9:00pm</p><br>
                   <p>Unfilled</p>
                 </div>
-                <div class="shift">
+                <div class="shift Waiting">
+                  <p>Checkouts</p>
+                  <p>11th Sept 2018 | 1:00pm - 9:00pm</p>
+                  <p>Filled by Christopher Hill</p>
+                  <p>Awaiting Approval </p>
+                </div>
+                <div class="shift Approved">
+                  <p>Checkouts</p>
+                  <p>11th Sept 2018 | 1:00pm - 9:00pm</p>
+                  <p>Filled by Christopher Hill</p>
+                  <p>Approved by Mark C on 09/09/18</p>
+                </div>
+                <div class="shift Waiting">
                   <p>Checkouts</p>
                   <p>11th Sept 2018 | 1:00pm - 9:00pm</p>
                   <p>Filled by Christopher Hill</p>
@@ -89,21 +101,8 @@
                 </div>
                 <div class="shift">
                   <p>Checkouts</p>
-                  <p>11th Sept 2018 | 1:00pm - 9:00pm</p>
-                  <p>Filled by Christopher Hill</p>
-                  <p>Awaiting Approval </p>
-                </div>
-                <div class="shift">
-                  <p>Checkouts</p>
-                  <p>11th Sept 2018 | 1:00pm - 9:00pm</p>
-                  <p>Filled by Christopher Hill</p>
-                  <p>Awaiting Approval </p>
-                </div>
-                <div class="shift">
-                  <p>Checkouts</p>
-                  <p>11th Sept 2018 | 1:00pm - 9:00pm</p>
-                  <p>Filled by Christopher Hill</p>
-                  <p>Awaiting Approval </p>
+                  <p>11th Sept 2018 | 1:00pm - 9:00pm</p><br>
+                  <p>Unfilled</p>
                 </div><br>
                 <button>Manage Shifts</button><br>
               </div>
@@ -111,7 +110,258 @@
           </div>
         </div>
       </div>
-    </main>
+      <div class="col-xl-6 row">
+        <div class="col-md-3">
+          <h4>Calendar</h4>
+          <div class="Filter scrollbar">
+            <table>
+              <tr> 
+                <td> 
+                  <h6>Filter</h6>
+                </td>
+              </tr>
+              <tr class="Checkouts">
+                <td>
+                  <p>Checkouts</p>
+                </td>
+                <td> 
+                  <input type="checkbox">
+                </td>
+              </tr>
+              <tr class="StockControl">
+                <td>
+                  <p>Stock Control</p>
+                </td>
+                <td> 
+                  <input type="checkbox">
+                </td>
+              </tr>
+              <tr class="DotComPicker">
+                <td>
+                  <p>Dot Com Picker</p>
+                </td>
+                <td> 
+                  <input type="checkbox">
+                </td>
+              </tr>
+              <tr class="Grocery">
+                <td>
+                  <p>Grocery</p>
+                </td>
+                <td> 
+                  <input type="checkbox">
+                </td>
+              </tr>
+              <tr class="BWS">
+                <td>
+                  <p>BWS</p>
+                </td>
+                <td> 
+                  <input type="checkbox">
+                </td>
+              </tr>
+              <tr class="Produce">
+                <td>
+                  <p>Produce</p>
+                </td>
+                <td> 
+                  <input type="checkbox">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-9 Cal"><br>
+          <h5>Sept</h5>
+          <table> 
+            <tr> 
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+              <th>Su</th>
+            </tr>
+            <tr> 
+              <td> 
+                <div class="con empty"></div>
+              </td>
+              <td> 
+                <div class="con empty"></div>
+              </td>
+              <td> 
+                <div class="con empty"></div>
+              </td>
+              <td> 
+                <div class="con empty"></div>
+              </td>
+              <td> 
+                <div class="con empty"></div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>1</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>2</p>
+                </div>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+                <div class="con past">
+                  <p>3</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>4</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>5</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>6</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>7</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>8</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>9</p>
+                </div>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+                <div class="con past">
+                  <p>10</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>11</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>12</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>13</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>14</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>15</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>16</p>
+                </div>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+                <div class="con past">
+                  <p>17</p>
+                </div>
+              </td>
+              <td>
+                <div class="con past">
+                  <p>18</p>
+                </div>
+              </td>
+              <td>
+                <div class="con date">
+                  <p>19</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>20</p>
+                </div>
+              </td>
+              <td>
+                <div class="con item">
+                  <p>21</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>22</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>23</p>
+                </div>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+                <div class="con item">
+                  <p>24</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>25</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>26</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>27</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>28</p>
+                </div>
+              </td>
+              <td>
+                <div class="con item">
+                  <p>29</p>
+                </div>
+              </td>
+              <td>
+                <div class="con">
+                  <p>30</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main><br>
     <footer>
       <script src="Assets/JS/jquery-3.3.1.min.js"></script>
       <script src="Assets/JS/bootstrap.min.js"></script>

@@ -1,0 +1,257 @@
+doctype html
+html(lang='en')
+  head
+    title Tesco Portal Dashboard - Shift Swap
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+
+    meta(name='author', content='H.M. Media')
+    link(rel='stylesheet', href='Assets/CSS/bootstrap.min.css')
+    link(rel='stylesheet', href='Assets/CSS/fontawesome-all.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:900|Roboto')
+    link(rel='stylesheet', href='Assets/CSS/style.css')
+
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+
+  body
+    nav 
+      .row 
+        .col-md-10.row
+          .col-sm-3
+            img(src="Assets/Images/Logo.jpg", alt="Shift Swap Logo")
+          .col-sm-9
+            h3 Tesco Shift Swap Portal
+        .col-md-2
+          h5 Logout
+    main.row
+      .col-xl-6.row
+        .col-md-6.Available
+          .con
+            h4 Shifts that suit you
+            .con
+              .shifts.scrollbar
+                .shift
+                  p Checkouts
+                  p Fri 10th Sept 2018
+                  p 1:00pm - 9:00pm
+                .shift
+                  p Checkouts
+                  p Fri 10th Sept 2018
+                  p 1:00pm - 9:00pm
+                .shift
+                  p Checkouts
+                  p Fri 10th Sept 2018
+                  p 1:00pm - 9:00pm
+                .shift
+                  p Checkouts
+                  p Fri 10th Sept 2018
+                  p 1:00pm - 9:00pm
+                .shift
+                  p Checkouts
+                  p Fri 10th Sept 2018
+                  p 1:00pm - 9:00pm
+                br
+                br
+                br 
+                br
+                .footer
+                  .centreBTN
+                    button Load More
+                  a Manage Preferences
+        .col-md-6.YourShifts
+          .con
+            h4 Your Shifts
+            .con
+              .shifts.scrollbar
+                .shift
+                  p Checkouts
+                  p 11th Sept 2018 | 1:00pm - 9:00pm
+                  br
+                  p Unfilled
+                .shift.Waiting
+                  p Checkouts
+                  p 11th Sept 2018 | 1:00pm - 9:00pm
+                  p Filled by Christopher Hill
+                  p Awaiting Approval 
+                .shift.Approved
+                  p Checkouts
+                  p 11th Sept 2018 | 1:00pm - 9:00pm
+                  p Filled by Christopher Hill
+                  p Approved by Mark C on 09/09/18
+                .shift.Waiting
+                  p Checkouts
+                  p 11th Sept 2018 | 1:00pm - 9:00pm
+                  p Filled by Christopher Hill
+                  p Awaiting Approval 
+                .shift
+                  p Checkouts
+                  p 11th Sept 2018 | 1:00pm - 9:00pm
+                  br
+                  p Unfilled
+                br 
+                button Manage Shifts
+                br
+      .col-xl-6.row
+        .col-md-3
+          h4 Calendar
+          .Filter.scrollbar
+            table
+              tr 
+                td 
+                  h6 Filter
+              tr.Checkouts
+                td
+                  p Checkouts
+                td 
+                  input(type="checkbox")
+              tr.StockControl
+                td
+                  p Stock Control
+                td 
+                  input(type="checkbox")
+              tr.DotComPicker
+                td
+                  p Dot Com Picker
+                td 
+                  input(type="checkbox")
+              tr.Grocery
+                td
+                  p Grocery
+                td 
+                  input(type="checkbox")
+              tr.BWS
+                td
+                  p BWS
+                td 
+                  input(type="checkbox")
+              tr.Produce
+                td
+                  p Produce
+                td 
+                  input(type="checkbox")
+            
+        .col-md-9.Cal
+          br
+          h5 Sept
+          table 
+            tr 
+              th Mo
+              th Tu
+              th We
+              th Th
+              th Fr
+              th Sa
+              th Su
+            tr 
+              td 
+                .con.empty
+              td 
+                .con.empty
+              td 
+                .con.empty
+              td 
+                .con.empty
+              td 
+                .con.empty
+              td
+                .con.past
+                  p 1
+              td
+                .con.past
+                  p 2
+            tr 
+              td
+                .con.past
+                  p 3
+              td
+                .con.past
+                  p 4
+              td
+                .con.past
+                  p 5
+              td
+                .con.past
+                  p 6
+              td
+                .con.past
+                  p 7
+              td
+                .con.past
+                  p 8
+              td
+                .con.past
+                  p 9
+            tr 
+              td
+                .con.past
+                  p 10
+              td
+                .con.past
+                  p 11
+              td
+                .con.past
+                  p 12
+              td
+                .con.past
+                  p 13
+              td
+                .con.past
+                  p 14
+              td
+                .con.past
+                  p 15
+              td
+                .con.past
+                  p 16
+            tr 
+              td
+                .con.past
+                  p 17
+              td
+                .con.past
+                  p 18
+              td
+                .con.date
+                  p 19
+              td
+                .con
+                  p 20
+              td
+                .con.item
+                  p 21
+              td
+                .con
+                  p 22
+              td
+                .con
+                  p 23
+            tr 
+              td
+                .con.item
+                  p 24
+              td
+                .con
+                  p 25
+              td
+                .con
+                  p 26
+              td
+                .con
+                  p 27
+              td
+                .con
+                  p 28
+              td
+                .con.item
+                  p 29
+              td
+                .con
+                  p 30
+    br
+    footer
+      script(src='Assets/JS/jquery-3.3.1.min.js')
+      script(src='Assets/JS/bootstrap.min.js')
+      script(src='Assets/JS/js-dist.js')
