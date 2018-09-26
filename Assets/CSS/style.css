@@ -20,9 +20,11 @@ h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
 
 #loginForm .form .Password input[type="checkbox"] { display: inline; width: 20px; height: 20px; margin-top: 10px; }
 
-#loginForm .form .Password p { display: inline; position: relative; top: -5px; }
+#loginForm .form .Password p { position: relative; top: -5px; }
 
 #loginForm .form .Password .showPW { text-align: center; }
+
+#loginForm .error { padding-top: 10px; color: red; text-align: center; }
 
 button { display: inherit; margin: auto; font-family: Montserrat; color: #333; padding: 5px 30px; border: 2px #333 solid; border-radius: 10px; background-color: #fc0; transition: all 300ms ease; }
 

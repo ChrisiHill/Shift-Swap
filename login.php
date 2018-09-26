@@ -1,3 +1,20 @@
+<?php
+include("dbc.php");
+session_start();
+if (isset($_COOKIE["UserID"]) && isset($_COOKIE["UKey"])) {
+  $UserID = $_COOKIE["UserID"];
+  $UKey = $_COOKIE["UKey"];
+  $q = mysqli_query($dbc, "SELECT `UKey` FROM `users` WHERE `ID` = $UserID");
+  $q = mysqli_fetch_assoc($q);
+  if ($q){
+    if ($q["UKey"] === $UKey) {
+      header('Location: http://localhost/projects/Shift-Swap/');
+    } else {
+      echo ("<p style='text-align: center; color: red'>Session has expired, please login again.<p>");
+    }
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
