@@ -6,7 +6,16 @@ $(function() {
             $("#Password").attr('type', "password")
         }
     });
-    $("#Login").on("click", function() {
+    $(document).keypress(function (e) { 
+        if(e.which == 13) {
+            //login()
+            
+        }
+    });
+    $("#Login").on("click", function(){
+        login()
+    });
+    login =  function() {
         $StoreID = $("#StoreID")
         $UserID = $("#UserID")
         $Password = $("#Password")
@@ -60,5 +69,8 @@ $(function() {
                 }
             })
         }
-    });
+    };
+    $(".logout").on("click", function(){
+        window.location.href = "http://localhost/projects/Shift-Swap/logout.php"
+    })
 });

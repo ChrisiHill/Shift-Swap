@@ -44,7 +44,7 @@ if (!isset($_COOKIE["UserID"]) && !isset($_COOKIE["UKey"])) {
             <h3>Tesco Shift Swap Portal</h3>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 logout">
           <h5>Logout</h5>
         </div>
       </div>

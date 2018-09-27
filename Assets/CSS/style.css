@@ -46,6 +46,8 @@ nav h3 { padding-top: 7px; }
 
 nav h5 { padding-top: 11px; }
 
+.logout:hover { cursor: pointer; }
+
 main { padding: 0 30px; padding-top: 5%; }
 
 main .col-xl-6 .col-md-6 .con .con { border: 2px #333 solid; border-radius: 5px; }
