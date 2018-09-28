@@ -8,7 +8,7 @@ if (isset($_COOKIE["UserID"]) && isset($_COOKIE["UKey"])) {
   $q = mysqli_fetch_assoc($q);
   if ($q){
     if ($q["UKey"] === $UKey) {
-      header('Location: http://localhost/projects/Shift-Swap/');
+      header('Location: /');
     } else {
       echo ("<p style='text-align: center; color: red'>Session has expired, please login again.<p>");
     }

@@ -9,6 +9,7 @@ $Password = base64_encode(base64_encode($Password));
 $StoreError = "";
 $UserError = "";
 $PasswordError = "";
+$redirect= "";
 $UKey = "";
 $storequery = mysqli_query($dbc, "SELECT * FROM `stores` WHERE `StoreID` = $storeID");
 $storequery = mysqli_fetch_assoc($storequery);
@@ -28,7 +29,7 @@ if ($storequery){
             if ($UKeyquery){
                 setcookie("UserID", $UserID, time() + (86400 * 30), "/");
                 setcookie("UKey", $UKey, time() + (86400 * 30), "/");
-                $redirect =  "http://localhost/projects/Shift-Swap/";
+                $redirect =  "/";
             } else {
                 $PasswordError = "Error logging in, please try again.";
             }

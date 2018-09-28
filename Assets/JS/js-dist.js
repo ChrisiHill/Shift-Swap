@@ -9,7 +9,7 @@ $(function() {
     $(document).keypress(function (e) { 
         if(e.which == 13) {
             //login()
-            
+
         }
     });
     $("#Login").on("click", function(){
@@ -71,6 +71,6 @@ $(function() {
         }
     };
     $(".logout").on("click", function(){
-        window.location.href = "http://localhost/projects/Shift-Swap/logout.php"
+        window.location.href = "logout.php"
     })
 });

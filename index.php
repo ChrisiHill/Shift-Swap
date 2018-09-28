@@ -3,7 +3,7 @@ include("dbc.php");
 session_start();
 
 if (!isset($_COOKIE["UserID"]) && !isset($_COOKIE["UKey"])) {
-  header('Location: http://localhost/projects/Shift-Swap/login.php');
+  header('Location: login.php');
 } else {
   $UserID = $_COOKIE["UserID"];
   $UKey = $_COOKIE["UKey"];
@@ -12,7 +12,7 @@ if (!isset($_COOKIE["UserID"]) && !isset($_COOKIE["UKey"])) {
   if ($q){
     if ($q["UKey"] === $UKey) {
     } else {
-      header('Location: http://localhost/projects/Shift-Swap/login.php');
+      header('Location: login.php');
     }
   }
 }
